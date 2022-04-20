@@ -632,7 +632,7 @@ public class V1ObjectMetaFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ObjectMetaFluent.ManagedFieldsNested<A>
       editFirstManagedField() {
-    if (managedFields.size() == 0)
+    if (managedFields.isEmpty())
       throw new RuntimeException("Can't edit first managedFields. The list is empty.");
     return setNewManagedFieldLike(0, buildManagedField(0));
   }
@@ -917,7 +917,7 @@ public class V1ObjectMetaFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ObjectMetaFluent.OwnerReferencesNested<A>
       editFirstOwnerReference() {
-    if (ownerReferences.size() == 0)
+    if (ownerReferences.isEmpty())
       throw new RuntimeException("Can't edit first ownerReferences. The list is empty.");
     return setNewOwnerReferenceLike(0, buildOwnerReference(0));
   }

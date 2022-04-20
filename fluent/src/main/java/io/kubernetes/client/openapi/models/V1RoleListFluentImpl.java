@@ -250,7 +250,7 @@ public class V1RoleListFluentImpl<A extends io.kubernetes.client.openapi.models.
   }
 
   public io.kubernetes.client.openapi.models.V1RoleListFluent.ItemsNested<A> editFirstItem() {
-    if (items.size() == 0) throw new RuntimeException("Can't edit first items. The list is empty.");
+    if (items.isEmpty()) throw new RuntimeException("Can't edit first items. The list is empty.");
     return setNewItemLike(0, buildItem(0));
   }
 

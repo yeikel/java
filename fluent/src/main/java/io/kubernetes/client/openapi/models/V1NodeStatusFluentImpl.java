@@ -273,7 +273,7 @@ public class V1NodeStatusFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NodeStatusFluent.AddressesNested<A>
       editFirstAddress() {
-    if (addresses.size() == 0)
+    if (addresses.isEmpty())
       throw new RuntimeException("Can't edit first addresses. The list is empty.");
     return setNewAddressLike(0, buildAddress(0));
   }
@@ -643,7 +643,7 @@ public class V1NodeStatusFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NodeStatusFluent.ConditionsNested<A>
       editFirstCondition() {
-    if (conditions.size() == 0)
+    if (conditions.isEmpty())
       throw new RuntimeException("Can't edit first conditions. The list is empty.");
     return setNewConditionLike(0, buildCondition(0));
   }
@@ -989,7 +989,7 @@ public class V1NodeStatusFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1NodeStatusFluent.ImagesNested<A> editFirstImage() {
-    if (images.size() == 0)
+    if (images.isEmpty())
       throw new RuntimeException("Can't edit first images. The list is empty.");
     return setNewImageLike(0, buildImage(0));
   }
@@ -1300,7 +1300,7 @@ public class V1NodeStatusFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NodeStatusFluent.VolumesAttachedNested<A>
       editFirstVolumesAttached() {
-    if (volumesAttached.size() == 0)
+    if (volumesAttached.isEmpty())
       throw new RuntimeException("Can't edit first volumesAttached. The list is empty.");
     return setNewVolumesAttachedLike(0, buildVolumesAttached(0));
   }

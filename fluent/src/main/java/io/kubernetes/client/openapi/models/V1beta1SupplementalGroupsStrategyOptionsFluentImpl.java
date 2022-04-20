@@ -256,7 +256,7 @@ public class V1beta1SupplementalGroupsStrategyOptionsFluentImpl<
               .RangesNested<
           A>
       editFirstRange() {
-    if (ranges.size() == 0)
+    if (ranges.isEmpty())
       throw new RuntimeException("Can't edit first ranges. The list is empty.");
     return setNewRangeLike(0, buildRange(0));
   }

@@ -238,7 +238,7 @@ public class V1CSINodeSpecFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1CSINodeSpecFluent.DriversNested<A>
       editFirstDriver() {
-    if (drivers.size() == 0)
+    if (drivers.isEmpty())
       throw new RuntimeException("Can't edit first drivers. The list is empty.");
     return setNewDriverLike(0, buildDriver(0));
   }

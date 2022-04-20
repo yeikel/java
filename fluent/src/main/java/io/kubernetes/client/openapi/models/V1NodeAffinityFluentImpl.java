@@ -302,7 +302,7 @@ public class V1NodeAffinityFluentImpl<
               .PreferredDuringSchedulingIgnoredDuringExecutionNested<
           A>
       editFirstPreferredDuringSchedulingIgnoredDuringExecution() {
-    if (preferredDuringSchedulingIgnoredDuringExecution.size() == 0)
+    if (preferredDuringSchedulingIgnoredDuringExecution.isEmpty())
       throw new RuntimeException(
           "Can't edit first preferredDuringSchedulingIgnoredDuringExecution. The list is empty.");
     return setNewPreferredDuringSchedulingIgnoredDuringExecutionLike(

@@ -407,7 +407,7 @@ public class V1APIGroupFluentImpl<A extends io.kubernetes.client.openapi.models.
 
   public io.kubernetes.client.openapi.models.V1APIGroupFluent.ServerAddressByClientCIDRsNested<A>
       editFirstServerAddressByClientCIDR() {
-    if (serverAddressByClientCIDRs.size() == 0)
+    if (serverAddressByClientCIDRs.isEmpty())
       throw new RuntimeException("Can't edit first serverAddressByClientCIDRs. The list is empty.");
     return setNewServerAddressByClientCIDRLike(0, buildServerAddressByClientCIDR(0));
   }
@@ -663,7 +663,7 @@ public class V1APIGroupFluentImpl<A extends io.kubernetes.client.openapi.models.
   }
 
   public io.kubernetes.client.openapi.models.V1APIGroupFluent.VersionsNested<A> editFirstVersion() {
-    if (versions.size() == 0)
+    if (versions.isEmpty())
       throw new RuntimeException("Can't edit first versions. The list is empty.");
     return setNewVersionLike(0, buildVersion(0));
   }

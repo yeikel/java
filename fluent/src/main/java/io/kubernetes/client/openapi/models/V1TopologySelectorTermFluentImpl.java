@@ -285,7 +285,7 @@ public class V1TopologySelectorTermFluentImpl<
               .MatchLabelExpressionsNested<
           A>
       editFirstMatchLabelExpression() {
-    if (matchLabelExpressions.size() == 0)
+    if (matchLabelExpressions.isEmpty())
       throw new RuntimeException("Can't edit first matchLabelExpressions. The list is empty.");
     return setNewMatchLabelExpressionLike(0, buildMatchLabelExpression(0));
   }

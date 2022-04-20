@@ -262,7 +262,7 @@ public class V1PodDisruptionBudgetStatusFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1PodDisruptionBudgetStatusFluent.ConditionsNested<A>
       editFirstCondition() {
-    if (conditions.size() == 0)
+    if (conditions.isEmpty())
       throw new RuntimeException("Can't edit first conditions. The list is empty.");
     return setNewConditionLike(0, buildCondition(0));
   }

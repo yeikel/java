@@ -237,7 +237,7 @@ public class V1LimitRangeSpecFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1LimitRangeSpecFluent.LimitsNested<A>
       editFirstLimit() {
-    if (limits.size() == 0)
+    if (limits.isEmpty())
       throw new RuntimeException("Can't edit first limits. The list is empty.");
     return setNewLimitLike(0, buildLimit(0));
   }

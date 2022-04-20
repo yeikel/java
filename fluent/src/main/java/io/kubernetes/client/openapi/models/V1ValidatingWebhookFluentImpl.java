@@ -636,7 +636,7 @@ public class V1ValidatingWebhookFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ValidatingWebhookFluent.RulesNested<A>
       editFirstRule() {
-    if (rules.size() == 0) throw new RuntimeException("Can't edit first rules. The list is empty.");
+    if (rules.isEmpty()) throw new RuntimeException("Can't edit first rules. The list is empty.");
     return setNewRuleLike(0, buildRule(0));
   }
 

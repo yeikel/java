@@ -267,7 +267,7 @@ public class V1NodeSelectorTermFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NodeSelectorTermFluent.MatchExpressionsNested<A>
       editFirstMatchExpression() {
-    if (matchExpressions.size() == 0)
+    if (matchExpressions.isEmpty())
       throw new RuntimeException("Can't edit first matchExpressions. The list is empty.");
     return setNewMatchExpressionLike(0, buildMatchExpression(0));
   }
@@ -526,7 +526,7 @@ public class V1NodeSelectorTermFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NodeSelectorTermFluent.MatchFieldsNested<A>
       editFirstMatchField() {
-    if (matchFields.size() == 0)
+    if (matchFields.isEmpty())
       throw new RuntimeException("Can't edit first matchFields. The list is empty.");
     return setNewMatchFieldLike(0, buildMatchField(0));
   }

@@ -260,7 +260,7 @@ public class V1ProjectedVolumeSourceFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ProjectedVolumeSourceFluent.SourcesNested<A>
       editFirstSource() {
-    if (sources.size() == 0)
+    if (sources.isEmpty())
       throw new RuntimeException("Can't edit first sources. The list is empty.");
     return setNewSourceLike(0, buildSource(0));
   }

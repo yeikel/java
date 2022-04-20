@@ -249,7 +249,7 @@ public class V1PodListFluentImpl<A extends io.kubernetes.client.openapi.models.V
   }
 
   public io.kubernetes.client.openapi.models.V1PodListFluent.ItemsNested<A> editFirstItem() {
-    if (items.size() == 0) throw new RuntimeException("Can't edit first items. The list is empty.");
+    if (items.isEmpty()) throw new RuntimeException("Can't edit first items. The list is empty.");
     return setNewItemLike(0, buildItem(0));
   }
 

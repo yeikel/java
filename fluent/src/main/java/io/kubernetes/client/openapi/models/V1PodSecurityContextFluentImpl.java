@@ -564,7 +564,7 @@ public class V1PodSecurityContextFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1PodSecurityContextFluent.SysctlsNested<A>
       editFirstSysctl() {
-    if (sysctls.size() == 0)
+    if (sysctls.isEmpty())
       throw new RuntimeException("Can't edit first sysctls. The list is empty.");
     return setNewSysctlLike(0, buildSysctl(0));
   }

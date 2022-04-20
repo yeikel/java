@@ -307,7 +307,7 @@ public class V1ServiceAccountFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ServiceAccountFluent.ImagePullSecretsNested<A>
       editFirstImagePullSecret() {
-    if (imagePullSecrets.size() == 0)
+    if (imagePullSecrets.isEmpty())
       throw new RuntimeException("Can't edit first imagePullSecrets. The list is empty.");
     return setNewImagePullSecretLike(0, buildImagePullSecret(0));
   }
@@ -625,7 +625,7 @@ public class V1ServiceAccountFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ServiceAccountFluent.SecretsNested<A>
       editFirstSecret() {
-    if (secrets.size() == 0)
+    if (secrets.isEmpty())
       throw new RuntimeException("Can't edit first secrets. The list is empty.");
     return setNewSecretLike(0, buildSecret(0));
   }

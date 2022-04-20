@@ -359,7 +359,7 @@ public class V1beta1PodSecurityPolicySpecFluentImpl<
               .AllowedCSIDriversNested<
           A>
       editFirstAllowedCSIDriver() {
-    if (allowedCSIDrivers.size() == 0)
+    if (allowedCSIDrivers.isEmpty())
       throw new RuntimeException("Can't edit first allowedCSIDrivers. The list is empty.");
     return setNewAllowedCSIDriverLike(0, buildAllowedCSIDriver(0));
   }
@@ -760,7 +760,7 @@ public class V1beta1PodSecurityPolicySpecFluentImpl<
               .AllowedFlexVolumesNested<
           A>
       editFirstAllowedFlexVolume() {
-    if (allowedFlexVolumes.size() == 0)
+    if (allowedFlexVolumes.isEmpty())
       throw new RuntimeException("Can't edit first allowedFlexVolumes. The list is empty.");
     return setNewAllowedFlexVolumeLike(0, buildAllowedFlexVolume(0));
   }
@@ -1035,7 +1035,7 @@ public class V1beta1PodSecurityPolicySpecFluentImpl<
               .AllowedHostPathsNested<
           A>
       editFirstAllowedHostPath() {
-    if (allowedHostPaths.size() == 0)
+    if (allowedHostPaths.isEmpty())
       throw new RuntimeException("Can't edit first allowedHostPaths. The list is empty.");
     return setNewAllowedHostPathLike(0, buildAllowedHostPath(0));
   }
@@ -1888,7 +1888,7 @@ public class V1beta1PodSecurityPolicySpecFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1beta1PodSecurityPolicySpecFluent.HostPortsNested<A>
       editFirstHostPort() {
-    if (hostPorts.size() == 0)
+    if (hostPorts.isEmpty())
       throw new RuntimeException("Can't edit first hostPorts. The list is empty.");
     return setNewHostPortLike(0, buildHostPort(0));
   }

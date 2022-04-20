@@ -531,7 +531,7 @@ public class V1ContainerFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1ContainerFluent.EnvNested<A> editFirstEnv() {
-    if (env.size() == 0) throw new RuntimeException("Can't edit first env. The list is empty.");
+    if (env.isEmpty()) throw new RuntimeException("Can't edit first env. The list is empty.");
     return setNewEnvLike(0, buildEnv(0));
   }
 
@@ -763,7 +763,7 @@ public class V1ContainerFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1ContainerFluent.EnvFromNested<A> editFirstEnvFrom() {
-    if (envFrom.size() == 0)
+    if (envFrom.isEmpty())
       throw new RuntimeException("Can't edit first envFrom. The list is empty.");
     return setNewEnvFromLike(0, buildEnvFrom(0));
   }
@@ -1156,7 +1156,7 @@ public class V1ContainerFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1ContainerFluent.PortsNested<A> editFirstPort() {
-    if (ports.size() == 0) throw new RuntimeException("Can't edit first ports. The list is empty.");
+    if (ports.isEmpty()) throw new RuntimeException("Can't edit first ports. The list is empty.");
     return setNewPortLike(0, buildPort(0));
   }
 
@@ -1695,7 +1695,7 @@ public class V1ContainerFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ContainerFluent.VolumeDevicesNested<A>
       editFirstVolumeDevice() {
-    if (volumeDevices.size() == 0)
+    if (volumeDevices.isEmpty())
       throw new RuntimeException("Can't edit first volumeDevices. The list is empty.");
     return setNewVolumeDeviceLike(0, buildVolumeDevice(0));
   }
@@ -1937,7 +1937,7 @@ public class V1ContainerFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1ContainerFluent.VolumeMountsNested<A>
       editFirstVolumeMount() {
-    if (volumeMounts.size() == 0)
+    if (volumeMounts.isEmpty())
       throw new RuntimeException("Can't edit first volumeMounts. The list is empty.");
     return setNewVolumeMountLike(0, buildVolumeMount(0));
   }

@@ -319,7 +319,7 @@ public class V1APIVersionsFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1APIVersionsFluent.ServerAddressByClientCIDRsNested<A>
       editFirstServerAddressByClientCIDR() {
-    if (serverAddressByClientCIDRs.size() == 0)
+    if (serverAddressByClientCIDRs.isEmpty())
       throw new RuntimeException("Can't edit first serverAddressByClientCIDRs. The list is empty.");
     return setNewServerAddressByClientCIDRLike(0, buildServerAddressByClientCIDR(0));
   }

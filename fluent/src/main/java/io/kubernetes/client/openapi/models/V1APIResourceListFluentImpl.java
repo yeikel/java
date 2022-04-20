@@ -310,7 +310,7 @@ public class V1APIResourceListFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1APIResourceListFluent.ResourcesNested<A>
       editFirstResource() {
-    if (resources.size() == 0)
+    if (resources.isEmpty())
       throw new RuntimeException("Can't edit first resources. The list is empty.");
     return setNewResourceLike(0, buildResource(0));
   }

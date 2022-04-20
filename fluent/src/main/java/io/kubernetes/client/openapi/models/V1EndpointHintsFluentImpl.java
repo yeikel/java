@@ -240,7 +240,7 @@ public class V1EndpointHintsFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1EndpointHintsFluent.ForZonesNested<A>
       editFirstForZone() {
-    if (forZones.size() == 0)
+    if (forZones.isEmpty())
       throw new RuntimeException("Can't edit first forZones. The list is empty.");
     return setNewForZoneLike(0, buildForZone(0));
   }
