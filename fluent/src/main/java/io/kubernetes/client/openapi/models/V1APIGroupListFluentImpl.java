@@ -260,8 +260,7 @@ public class V1APIGroupListFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1APIGroupListFluent.GroupsNested<A> editFirstGroup() {
-    if (groups.isEmpty())
-      throw new RuntimeException("Can't edit first groups. The list is empty.");
+    if (groups.isEmpty()) throw new RuntimeException("Can't edit first groups. The list is empty.");
     return setNewGroupLike(0, buildGroup(0));
   }
 

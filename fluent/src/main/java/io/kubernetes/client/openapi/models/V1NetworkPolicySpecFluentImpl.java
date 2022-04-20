@@ -263,8 +263,7 @@ public class V1NetworkPolicySpecFluentImpl<
 
   public io.kubernetes.client.openapi.models.V1NetworkPolicySpecFluent.EgressNested<A>
       editFirstEgress() {
-    if (egress.isEmpty())
-      throw new RuntimeException("Can't edit first egress. The list is empty.");
+    if (egress.isEmpty()) throw new RuntimeException("Can't edit first egress. The list is empty.");
     return setNewEgressLike(0, buildEgress(0));
   }
 

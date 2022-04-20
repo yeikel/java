@@ -989,8 +989,7 @@ public class V1NodeStatusFluentImpl<
   }
 
   public io.kubernetes.client.openapi.models.V1NodeStatusFluent.ImagesNested<A> editFirstImage() {
-    if (images.isEmpty())
-      throw new RuntimeException("Can't edit first images. The list is empty.");
+    if (images.isEmpty()) throw new RuntimeException("Can't edit first images. The list is empty.");
     return setNewImageLike(0, buildImage(0));
   }
 

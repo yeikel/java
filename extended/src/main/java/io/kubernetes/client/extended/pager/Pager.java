@@ -117,8 +117,7 @@ public class Pager<ApiType extends KubernetesObject, ApiListType extends Kuberne
      */
     @Override
     public boolean hasNext() {
-      if (listObjectCurrentPage.getItems() == null
-          || listObjectCurrentPage.getItems().isEmpty()) {
+      if (listObjectCurrentPage.getItems() == null || listObjectCurrentPage.getItems().isEmpty()) {
         return false;
       }
       if (!started) {
